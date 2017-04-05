@@ -28,7 +28,7 @@ class BaseView(View):
 
 
 class RequireLoginView(BaseView):
-
+    
     @loginRequired
     def dispatch_request(self, *args, **kwargs):
         return super(RequireLoginView, self).dispatch_request(*args, **kwargs)
