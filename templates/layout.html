@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    {% block meta %}
+    {% endblock %}
+
+
+    <title>{{ title }}</title>
+
+    <link rel="stylesheet" href="/static/Css/layout.css">
+    <link rel="stylesheet" href="/static/Css/font-style.css">
+    {% block style %}
+    {% endblock %}
+
+    <script src="/static/Js/jquery-1.11.1.js"></script>
+    {% block frontScript %}
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+{% endblock %}
+
+
+{% block endScript %}
+{% endblock %}
+<script src="/static/Js/layout.js"></script>
+</body>
+</html>
